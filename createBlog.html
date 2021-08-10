@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="createBlog.css">
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAe2zMCYN_806rhi9fzesdbyrNEUpbyMJU",
+    authDomain: "blog-18bdf.firebaseapp.com",
+    projectId: "blog-18bdf",
+    storageBucket: "blog-18bdf.appspot.com",
+    messagingSenderId: "604745616457",
+    appId: "1:604745616457:web:e7b44de6f201aca51f8398"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    
+    <script src="createBlog.js" defer></script>
+</head>
+<body>
+    <div id ="navbar">
+        <a href = "index.html">
+        <div>
+            Blog Posts
+        </div>
+        </a> 
+        <div>
+            Create a Blog
+        </div>
+    </div>
+    <div id ="place">
+        <div id="form">
+            <div id="username">
+                <label>Username: </label>
+                <input id="usernameEntry" type="text" placeholder = "Enter Here">
+            </div><br>
+            <div id="title">
+                <label>Title: </label>
+                <input id = "titleEntry" placeholder = "Enter Here" type="text" id="lname" name="lname">
+            </div><br>
+            <div id="content">
+                <label>Content: </label>
+                <input id = "contentEntry" type="text" placeholder = "Type for Blog Here">
+            </div>
+            <div id="submit">
+                <button>Submit</button>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
